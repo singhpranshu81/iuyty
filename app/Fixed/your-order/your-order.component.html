@@ -1,0 +1,26 @@
+<body class="bodyy">
+
+<table class="responsive-table">
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Food Name</th>
+            <th>Food Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let fooditem of carty.food">
+            <td data-label="Order ID">1</td>
+            <td data-label="Date">{{date}}</td>
+            <td data-label="Status">Success</td>
+            <td data-label="Food Name">{{fooditem.foodName}}</td>
+            <td data-label="Food Name">{{fooditem.price}}</td>
+        </tr>
+      
+    </tbody>
+    <!-- {{carty | json}}
+    <hr>
+    {{dummyOrder | json}} -->
+</table></body>
